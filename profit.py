@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from io import BytesIO
 
 st.set_page_config(page_title="EGSA2025 Profit Sharing", layout="wide")
 st.title("EGSA2025 Profit Sharing App")
@@ -43,22 +42,21 @@ if st.button("Calculate Profit Share"):
     total_contribution = edited_df["Contribution"].sum()
     
     if total_contribution > 0:
+        # Calculate proportional profit
         edited_df["Profit_Share"] = edited_df["Contribution"] / total_contribution * total_profit
         st.success("Profit Share Calculated Successfully!")
         st.dataframe(edited_df)
 
         # -------------------------
-        # Export to Excel
+        # Export to CSV (no openpyxl needed)
         # -------------------------
-        towrite = BytesIO()
-        edited_df.to_excel(towrite, index=False, sheet_name="Profit_Share")
-        towrite.seek(0)
+        csv_data = edited_df.to_csv(index=False).encode('utf-8')
 
         st.download_button(
-            label="Download Profit Share as Excel",
-            data=towrite,
-            file_name="EGSA2025_Profit_Share.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            label="Download Profit Share as CSV",
+            data=csv_data,
+            file_name="EGSA2025_Profit_Share.csv",
+            mime="text/csv"
         )
     else:
         st.error("Total contribution cannot be zero!")
