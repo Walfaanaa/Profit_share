@@ -10,6 +10,21 @@ st.set_page_config(
     layout="wide"
 )
 
+# =====================================
+# LOGO
+# =====================================
+
+LOGO_URL = "https://raw.githubusercontent.com/Walfaanaa/Profit_share/main/EGSA.png"
+
+st.markdown(
+    f"""
+    <div style="text-align:center;">
+        <img src="{LOGO_URL}" width="220">
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.markdown("""
 <style>
 html, body, [class*="css"]{
