@@ -31,20 +31,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-    <h1 style="
-        color:#6A0DAD;
-        font-size:45px;
-        margin-top:20px;
-        font-weight:bold;
-    ">
-        Kabajamtoota Qaalii Miseentoota EGSA2025 Baga Bara Baajataa 2019 Qooddannaa Gahee Keessaniin Isin Ga'e.
-    </h1>
-
-</div>
-""",
-    unsafe_allow_html=True
-)
-
 # MEMBER DATA
 # =====================================
 member_ids = [
