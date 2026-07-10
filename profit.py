@@ -89,9 +89,9 @@ if st.button("✅ Calculate Profit Share", use_container_width=True):
 
         # Final amount received
         result["Final Amount"] = (
-            result["Contribution"]
-            + result["Profit Share"]
-        ).round(2)
+    result["Contribution"]
+    + result["Profit Share"]
+).round().astype(int)
 
         st.session_state["result"] = result
         st.session_state["profit"] = total_profit
