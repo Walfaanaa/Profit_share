@@ -33,7 +33,7 @@ html, body, [class*="css"]{
 </style>
 """, unsafe_allow_html=True)
 
-st.title(" Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa Bu`aa keessaniin isin ga`e.")
+st.title(" Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa gahee keessaniin isin ga`e.")
 
 # =====================================
 # MEMBER DATA
