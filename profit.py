@@ -65,9 +65,6 @@ total_profit = st.number_input(
     format="%.2f"
 )
 
-# =====================================
-# CALCULATE
-# =====================================
 if st.button("✅ Calculate Profit Share", use_container_width=True):
 
     total_contribution = edited_df["Contribution"].sum()
@@ -78,16 +75,27 @@ if st.button("✅ Calculate Profit Share", use_container_width=True):
 
         result = edited_df.copy()
 
+        # Percentage ownership
+        result["Ownership %"] = (
+            result["Contribution"] / total_contribution * 100
+        ).round(2)
+
+        # Profit allocated
         result["Profit Share"] = (
             result["Contribution"]
             / total_contribution
             * total_profit
         ).round(2)
 
+        # Final amount received
+        result["Final Amount"] = (
+            result["Contribution"]
+            + result["Profit Share"]
+        ).round(2)
+
         st.session_state["result"] = result
         st.session_state["profit"] = total_profit
         st.session_state["contribution"] = total_contribution
-
 # =====================================
 # SHOW RESULT
 # =====================================
