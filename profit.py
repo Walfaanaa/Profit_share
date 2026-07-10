@@ -25,17 +25,18 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
 st.markdown("""
-<style>
-html, body, [class*="css"]{
-    font-size:22px;
-}
-</style>
+<h1 style="
+text-align:center;
+color:#003366;
+font-size:45px;
+font-weight:bold;
+">
+ Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa gahee keessaniin isin ga`e.
+</h1>
 """, unsafe_allow_html=True)
 
-st.title(" Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa gahee keessaniin isin ga`e.")
-
-# =====================================
 # MEMBER DATA
 # =====================================
 member_ids = [
