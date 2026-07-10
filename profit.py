@@ -29,7 +29,7 @@ st.markdown(
 st.markdown("""
 <h1 style="
 text-align:center;
-color:#003366;
+color:#6A0DAD;;
 font-size:45px;
 font-weight:bold;
 ">
