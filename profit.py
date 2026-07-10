@@ -12,7 +12,8 @@ st.set_page_config(
 
 LOGO_URL = "https://raw.githubusercontent.com/Walfaanaa/Profit_share/main/EGSA.png"
 
-st.markdown(f"""
+st.markdown(
+    f"""
 <div style="text-align:center;">
 
     <div style="
@@ -30,11 +31,13 @@ st.markdown(f"""
         margin-top:20px;
         font-weight:bold;
     ">
-        Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa gahee keessaniin isin ga`e.
+        Kabajamtoota Qaalii Miseentoota EGSA2025 Baga Bara Baajataa 2019 Qooddannaa Gahee Keessaniin Isin Ga'e.
     </h1>
 
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True
+)
 
 # MEMBER DATA
 # =====================================
