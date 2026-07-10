@@ -19,7 +19,7 @@ LOGO_URL = "https://raw.githubusercontent.com/Walfaanaa/Profit_share/main/EGSA.p
 st.markdown(
     f"""
     <div style="text-align:center;">
-        <img src="{LOGO_URL}" width="220">
+        <img src="{LOGO_URL}" width="280">
     </div>
     """,
     unsafe_allow_html=True,
@@ -33,7 +33,7 @@ html, body, [class*="css"]{
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🏆 EGSA2025 Profit Sharing App")
+st.title(" Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa Bu`aa keessaniin isin ga`e.")
 
 # =====================================
 # MEMBER DATA
