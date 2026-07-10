@@ -16,7 +16,7 @@ st.set_page_config(page_title="EGSA2025 Profit Sharing", layout="wide")
 
 LOGO_URL = "https://raw.githubusercontent.com/Walfaanaa/Profit_share/main/EGSA.png"
 
-left, center, right = st.columns([1, 2, 1])
+left, center, right = st.columns([3, 1, 3])
 
 with center:
     st.image(LOGO_URL, width=280)
