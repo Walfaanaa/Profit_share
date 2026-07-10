@@ -10,20 +10,26 @@ st.set_page_config(
     layout="wide"
 )
 
+import streamlit as st
+
+st.set_page_config(page_title="EGSA2025 Profit Sharing", layout="wide")
+
 LOGO_URL = "https://raw.githubusercontent.com/Walfaanaa/Profit_share/main/EGSA.png"
 
-st.markdown(
-    f"""
-<div style="text-align:center;">
+left, center, right = st.columns([1, 2, 1])
 
-    <div style="
-        display:inline-block;
-        background-color:#2E7D32;
-        padding:20px;
-        border-radius:15px;
-    ">
-        <img src="{LOGO_URL}" width="280">
-    </div>
+with center:
+    st.image(LOGO_URL, width=280)
+
+st.markdown(
+    """
+    <h1 style="text-align:center; color:#6A0DAD;">
+        Kabajamtoota Qaalii Miseentoota EGSA2025 Baga Bara Baajataa 2019
+        Qooddannaa Gahee Keessaniin Isin Ga'e.
+    </h1>
+    """,
+    unsafe_allow_html=True,
+)
 
     <h1 style="
         color:#6A0DAD;
