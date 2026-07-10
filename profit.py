@@ -10,31 +10,30 @@ st.set_page_config(
     layout="wide"
 )
 
-# =====================================
-# LOGO
-# =====================================
-
 LOGO_URL = "https://raw.githubusercontent.com/Walfaanaa/Profit_share/main/EGSA.png"
 
-st.markdown(
-    f"""
-    <div style="text-align:center;">
+st.markdown(f"""
+<div style="text-align:center;">
+
+    <div style="
+        display:inline-block;
+        background-color:#2E7D32;
+        padding:20px;
+        border-radius:15px;
+    ">
         <img src="{LOGO_URL}" width="280">
     </div>
-    """,
-    unsafe_allow_html=True,
-)
 
+    <h1 style="
+        color:#6A0DAD;
+        font-size:45px;
+        margin-top:20px;
+        font-weight:bold;
+    ">
+        Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa gahee keessaniin isin ga`e.
+    </h1>
 
-st.markdown("""
-<h1 style="
-text-align:center;
-color:#6A0DAD;;
-font-size:45px;
-font-weight:bold;
-">
- Kabajamtoota Qaalii Miseentoota EGSA2025 Baga bara Baajeta 2019 Qooddannaa gahee keessaniin isin ga`e.
-</h1>
+</div>
 """, unsafe_allow_html=True)
 
 # MEMBER DATA
